@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online VStudio Converter</title>
+  </head>
+  <body>
+    <form method="POST" action="/convert" enctype="multipart/form-data">
+      <label for="video">Selecione um vídeo:</label>
+      <input type="file" id="video" name="video" />
+
+      <label for="desired_format">Escolha um formato de saída:</label>
+      <select id="desired_format" name="desired_format">
+        <option value="mp4">MP4</option>
+        <option value="avi">AVI</option>
+        <option value="mpeg">MPEG</option>
+      </select>
+
+      <button type="submit">Converter</button>
+    </form>
+  </body>
+</html>
